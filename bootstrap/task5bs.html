@@ -8,145 +8,122 @@
     <link rel='stylesheet' href='//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
     <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
 </head>
 <body>
 <div class="container">
     <form class="well form-horizontal" id="contact_form">
         <fieldset>
-            <table class="table">
-                <tr>
-                    <td><label class="control-label">First Name <span class="text-danger">*</span></label></td>
-                    <td>
-                        <div class="inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fas fa-user"></i></span>
-                                <input name="first_name" placeholder="First Name" class="form-control" type="text">
-                            </div>
-                            <small class="text-danger">Please supply your first name</small>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label class="control-label">Last Name <span class="text-danger">*</span></label></td>
-                    <td>
-                        <div class="inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fas fa-user"></i></span>
-                                <input name="last_name" placeholder="Last Name" class="form-control" type="text">
-                            </div>
-                            <small class="text-danger">Please supply your last name</small>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label class="control-label">E-Mail <span class="text-danger">*</span></label></td>
-                    <td>
-                        <div class="inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
-                                <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
-                            </div>
-                            <small class="text-danger">Please supply your email address</small>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label class="control-label">Phone # <span class="text-danger">*</span></label></td>
-                    <td>
-                        <div class="inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fas fa-phone"></i></span>
-                                <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
-                            </div>
-                            <small class="text-danger">Please supply your phone number</small>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label class="control-label">Address <span class="text-danger">*</span></label></td>
-                    <td>
-                        <div class="inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fas fa-home"></i></span> 
-                                <input name="address" placeholder="Address" class="form-control" type="text">
-                            </div>
-                            <small class="text-danger">Please supply your street address</small>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label class="control-label">City <span class="text-danger">*</span></label></td>
-                    <td>
-                        <div class="inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fas fa-home"></i></span>
-                                <input name="city" placeholder="City" class="form-control" type="text">
-                            </div>
-                            <small class="text-danger">Please supply your city</small>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label class="control-label">State</label></td>
-                    <td>
-                        <div class="selectContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fas fa-list"></i></span> 
-                                <select name="state" class="form-control selectpicker">
-                                    <option value=" ">Please select your state</option>
-                                    <option>Andhra Pradesh</option>
-                                    <option>Arunachal Pradesh</option>
-                                    <option>Assam</option>
-                                    <option>Bihar</option>
-                                    <option>Chhattisgarh</option>
-                                    <option>Goa</option>
-                                    <option>Gujarat</option>
-                                    <option>Haryana</option>
-                                    <option>Himachal Pradesh</option>
-                                    <option>Jharkhand</option>
-                                    <option>Karnataka</option>
-                                    <option>Kerala</option>
-                                    <option>Madhya Pradesh</option>
-                                    <option>Maharashtra</option>
-                                    <option>Manipur</option>
-                                </select>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label class="control-label">Do you have hosting?</label></td>
-                    <td>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="hosting" value="yes" /> Yes
-                            </label>
-                        </div>
-                        <div class="radio">
-                            <label>
-                                <input type="radio" name="hosting" value="no" /> No
-                            </label>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label class="control-label">Project Description</label></td>
-                    <td>
-                        <div class="inputGroupContainer">
-                            <div class="input-group">
-                                <span class="input-group-addon"><i class="fas fa-pencil-alt"></i></span>
-                                <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>
-                        <button type="submit" class="btn btn-warning">Send <i class="fas fa-paper-plane"></i></button>
-                    </td>
-                </tr>
-            </table>
+            <div class="form-group">
+                <label class="col-md-4 control-label">First Name</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-user"></i></span>
+                        <input name="first_name" placeholder="First Name" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Last Name</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-user"></i></span>
+                        <input name="last_name" placeholder="Last Name" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">E-Mail</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
+                        <input name="email" placeholder="E-Mail Address" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Phone #</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-phone"></i></span>
+                        <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Address</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-home"></i></span> 
+                        <input name="address" placeholder="Address" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">City</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-home"></i></span>
+                        <input name="city" placeholder="City" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">State</label>
+                <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-list"></i></span> 
+                        <select name="state" class="form-control selectpicker">
+                            <option value=" ">Please select your state</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Arunachal Pradesh</option>
+                            <option>Assam</option>
+                            <option>Bihar</option>
+                            <option>Chhattisgarh</option>
+                            <option>Goa</option>
+                            <option>Gujarat</option>
+                            <option>Haryana</option>
+                            <option>Himachal Pradesh</option>
+                            <option>Jharkhand</option>
+                            <option>Karnataka</option>
+                            <option>Kerala</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Maharashtra</option>
+                            <option>Manipur</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Do you have hosting?</label>
+                <div class="col-md-4">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="hosting" value="yes" /> Yes
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" name="hosting" value="no" /> No
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Project Description</label>
+                <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="fas fa-pencil-alt"></i></span>
+                        <textarea class="form-control" name="comment" placeholder="Project Description"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                    <button type="submit" class="btn btn-warning">Send <i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
         </fieldset>
     </form>
 </div>
